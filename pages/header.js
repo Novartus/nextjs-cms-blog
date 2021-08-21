@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default () => (
+const HeaderNav = () => (
   <>
     <ul>
       <li>
@@ -23,3 +23,5 @@ export default () => (
     </ul>
   </>
 );
+
+export default HeaderNav;

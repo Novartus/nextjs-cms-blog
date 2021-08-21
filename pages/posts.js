@@ -18,19 +18,15 @@ const Posts = ({ posts }) => {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to Posts Page</h1>
         {posts.map(({ document, slug }) => (
-          <div className={styles.grid}>
+          <div className={styles.grid} key={slug}>
             <section key={slug}>
               <h2>{document.attributes.title}</h2>
-              <span>
-                <p className={styles.description}>
-                  {document.attributes.description}
-                </p>
-                <Link href="/post/[slug]" as={`/post/${slug}`}>
-                  <a className={styles.card}>
-                    Click Here to read more about it
-                  </a>
-                </Link>
-              </span>
+              <p className={styles.description}>
+                {document.attributes.description}
+              </p>
+              <Link href="/post/[slug]" as={`/post/${slug}`}>
+                <a className={styles.card}>Click Here to read more about it</a>
+              </Link>
             </section>
           </div>
         ))}

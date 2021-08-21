@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
+import Link from "next/link";
 import HeaderNav from "./header";
 import styles from "../styles/Home.module.css";
 import { attributes, body as homeContent } from "../content/home.md";
@@ -24,9 +25,9 @@ export default class Home extends Component {
 
             <p className={styles.description}>
               Get started by exploring cats or{" "}
-              <a href="/posts" style={{ color: "#0070f3" }}>
+              <Link href="/posts" style={{ color: "#0070f3" }}>
                 Posts
-              </a>{" "}
+              </Link>{" "}
               !
             </p>
 
