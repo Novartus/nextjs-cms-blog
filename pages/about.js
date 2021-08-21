@@ -3,7 +3,7 @@ import Head from "next/head";
 import HeaderNav from "./header";
 import styles from "../styles/Home.module.css";
 
-export default () => (
+const About = () => (
   <>
     <Head>
       <title>About</title>
@@ -22,6 +22,7 @@ export default () => (
         <a
           href="https://novartus.github.io"
           target="_blank"
+          rel="noreferrer"
           className={styles.card}
         >
           Visit Me
@@ -30,3 +31,5 @@ export default () => (
     </main>
   </>
 );
+
+export default About;
