@@ -1,19 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import Head from "next/head";
+import Meta from "../components/Meta";
 import postsServices from "../services/posts";
-import HeaderNav from "./header";
 import styles from "../styles/Home.module.css";
 
 const Posts = ({ posts }) => {
   return (
     <>
-      <Head>
-        <title>Posts</title>
-        <meta name="description" content="Posts page" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <HeaderNav />
+      <Meta title={"Posts"} description={"Posts page"} />
 
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to Posts Page</h1>

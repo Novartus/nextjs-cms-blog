@@ -1,16 +1,13 @@
 import React from "react";
-import Head from "next/head";
 import ReactMarkdown from "react-markdown";
-import HeaderNav from "../header";
+import Meta from "../../components/Meta";
 import styles from "../../styles/Home.module.css";
 
 const Post = ({ attributes, content }) => {
   return (
     <>
-      <Head>
-        <title>{attributes.title}</title>
-      </Head>
-      <HeaderNav />
+      <Meta title={attributes.title} description={"Posts page"} />
+
       <main className={styles.main}>
         <h1 className={styles.title}> {attributes.title}</h1>
         <p className={styles.description}>{attributes.description}</p>

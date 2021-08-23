@@ -2,7 +2,6 @@ import { Component } from "react";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
-import HeaderNav from "./header";
 import styles from "../styles/Home.module.css";
 import { attributes, body as homeContent } from "../content/home.md";
 
@@ -18,15 +17,13 @@ export default class Home extends Component {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <article>
-          <HeaderNav />
-
           <main className={styles.main}>
             <h1 className={styles.title}>Welcome to {title}</h1>
 
             <p className={styles.description}>
-              Get started by exploring cats or{" "}
-              <Link href="/posts" style={{ color: "#0070f3" }}>
-                Posts
+              Get started by exploring Cats or{" "}
+              <Link href="/posts">
+                <a style={{ color: "#0070f3" }}> Posts</a>
               </Link>{" "}
               !
             </p>

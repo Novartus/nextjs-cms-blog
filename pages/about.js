@@ -1,16 +1,10 @@
 import React from "react";
-import Head from "next/head";
-import HeaderNav from "./header";
+import Meta from "../components/Meta";
 import styles from "../styles/Home.module.css";
 
 const About = () => (
   <>
-    <Head>
-      <title>About</title>
-      <meta name="description" content="About page" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <HeaderNav />
+    <Meta title={"About"} description={"About page"} />
 
     <main className={styles.main}>
       <h1 className={styles.title}>Welcome to About Page</h1>
