@@ -1,5 +1,5 @@
 ---
-title: Some coffee Recipes
+title: Some Coffee Recipes!
 description: It contains information about some delicious coffee recipes.
 data:
   - name: Black
